@@ -1,0 +1,10 @@
+<div [class.loader-hidden]="!show">
+	<div class="loader-overlay">
+		<div *ngIf="show">
+			<h2>Loading...</h2>
+			<p>
+				<ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+			</p>
+		</div>
+	</div>
+</div>

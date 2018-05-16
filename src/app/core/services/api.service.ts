@@ -1,40 +1,60 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpParams} from "@angular/common/http";
-import {environment} from "../../../environments/environment";
-
-import {catchError} from "rxjs/operators";
-import {Observable} from "rxjs/internal/Observable";
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {environment} from '../../../environments/environment';
+import {LoaderService} from './loader.service';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class ApiService {
 
-  constructor(private http: HttpClient) {
-  }
+    constructor(private http: HttpClient, private loaderService: LoaderService) {
+    }
 
 
-  get(path: string, params: HttpParams = new HttpParams()): Observable<any> {
-    return this.http.get(`${environment.api_url}${path}`, {params})
-  }
+    async get(path: string, params: HttpParams = new HttpParams()): Promise<any> {
+        this.showLoader();
+        const data = await this.http.get(`${environment.api_url}${path}`, {params}).toPromise();
+        this.hideLoader();
 
-  put(path: string, body: Object = {}): Observable<any> {
-    return this.http.put(
-      `${environment.api_url}${path}`,
-      JSON.stringify(body)
-    );
-  }
+        return data;
+    }
 
-  post(path: string, body: Object = {}): Observable<any> {
-    return this.http.post(
-      `${environment.api_url}${path}`,
-      JSON.stringify(body)
-    );
-  }
+    put(path: string, body: Object = {}) {
+        return this.http.put(
+            `${environment.api_url}${path}`,
+            JSON.stringify(body)
+        );
+    }
 
-  delete(path): Observable<any> {
-    return this.http.delete(
-      `${environment.api_url}${path}`
-    );
-  }
+    post(path: string, body: Object = {}) {
+        return this.http.post(
+            `${environment.api_url}${path}`,
+            JSON.stringify(body)
+        );
+    }
+
+    delete(path) {
+        return this.http.delete(
+            `${environment.api_url}${path}`
+        );
+    }
+
+    private showLoader() {
+        console.log('show');
+        this.loaderService.show();
+    }
+
+    private hideLoader() {
+        console.log('hide');
+        this.loaderService.hide();
+    }
+
+    private onEnd() {
+        this.hideLoader();
+    }
+
+    private onError(error) {
+        console.log(error);
+    }
 }
