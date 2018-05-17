@@ -1,0 +1,1 @@
+export {HttpLoaderFactory} from './HttpLoaderFactory';

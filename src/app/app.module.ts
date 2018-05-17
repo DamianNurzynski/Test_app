@@ -13,9 +13,9 @@ import {GlobalService, LoaderService} from './core/services';
 import {FooterComponent} from './shared/footer/footer.component';
 import {HeaderComponent} from './shared/header/header.component';
 import {LoaderComponent} from './shared/loader/loader.component';
-import {HttpModule} from '@angular/http';
-import {HttpClientModule} from '@angular/common/http';
-import {TranslateModule} from '@ngx-translate/core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpLoaderFactory} from './core/factories';
 
 @NgModule({
   declarations: [
@@ -30,10 +30,15 @@ import {TranslateModule} from '@ngx-translate/core';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     HttpClientModule,
     NgbModule.forRoot(),
-    TranslateModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     AppRoutingModule
   ],
   providers: [GlobalService, LoaderService],
@@ -42,3 +47,4 @@ import {TranslateModule} from '@ngx-translate/core';
 
 export class AppModule {
 }
+

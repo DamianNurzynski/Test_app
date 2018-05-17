@@ -1,25 +1,18 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {NavigationCancel, NavigationEnd, NavigationStart, Router} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-    loading;
 
-    constructor(private router: Router) {
-        this.loading = true;
-    }
+  constructor(private translateService: TranslateService) {
+  }
 
-    ngAfterViewInit() {
-        this.router.events.subscribe(event => {
-            if (event instanceof NavigationStart) {
-                this.loading = true;
-            } else if (event instanceof NavigationEnd || event instanceof NavigationCancel) {
-                this.loading = false;
-            }
-        });
-    }
+  ngAfterViewInit() {
+
+  }
 }
