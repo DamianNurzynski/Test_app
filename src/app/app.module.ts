@@ -15,27 +15,29 @@ import {HeaderComponent} from './shared/header/header.component';
 import {LoaderComponent} from './shared/loader/loader.component';
 import {HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        AboutComponent,
-        ContactComponent,
-        ProjectsComponent,
-        FooterComponent,
-        HeaderComponent,
-        LoaderComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        HttpClientModule,
-        NgbModule.forRoot(),
-        AppRoutingModule
-    ],
-    providers: [GlobalService, LoaderService],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    AboutComponent,
+    ContactComponent,
+    ProjectsComponent,
+    FooterComponent,
+    HeaderComponent,
+    LoaderComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
+    NgbModule.forRoot(),
+    TranslateModule.forRoot(),
+    AppRoutingModule
+  ],
+  providers: [GlobalService, LoaderService],
+  bootstrap: [AppComponent]
 })
 
 export class AppModule {
