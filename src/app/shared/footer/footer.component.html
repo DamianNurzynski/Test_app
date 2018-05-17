@@ -2,9 +2,9 @@
   <div class="wrapper">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col-3 offset-lg-1 flex-column nav">
-          <div class="col">
-            <div class="col"><h4>Company</h4></div>
+        <div class="col-3 offset-lg-1 flex-column ">
+          <div class="col"><h4>Company</h4></div>
+          <div class="col nav">
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="#" routerLink="about">About</a>
@@ -20,6 +20,7 @@
               </li>
             </ul>
           </div>
+
         </div>
         <div class="col-5">
           <div class="col-lg-10 social-section">
@@ -82,11 +83,14 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="credits">
-      <button (click)="switchLanguage('pl')" class="btn btn-outline-info">Polski</button>
-      <button (click)="switchLanguage('en')" class="btn btn-outline-info">English</button>
+      <div class="row languageSwitch  justify-content-center">
+        <button (click)="switchLanguage('pl')" class="btn btn-outline-info">Polski</button>
+        <button (click)="switchLanguage('en')" class="btn btn-outline-info">English</button>
+      </div>
       <p>© 2018 Damian Nurzyński | All rights reserved</p>
     </div>
   </div>
