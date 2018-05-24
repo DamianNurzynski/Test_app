@@ -7,11 +7,16 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  langs = this.translate.langs;
 
   constructor(private translate: TranslateService) {
-
+    console.log(this.langs);
   }
 
   ngOnInit() {
+  }
+
+  changeLanguage(language) {
+    this.translate.use(language);
   }
 }

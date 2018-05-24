@@ -16,6 +16,7 @@ import {appInitializerFactory, HttpLoaderFactory} from './core/factories';
 import {FooterComponent} from './shared';
 import {HeaderComponent} from './shared';
 import {LoaderComponent} from './shared';
+import { LanguageTranslatePipe } from './core/pipes/language-translate.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {LoaderComponent} from './shared';
     ProjectsComponent,
     FooterComponent,
     HeaderComponent,
-    LoaderComponent
+    LoaderComponent,
+    LanguageTranslatePipe
   ],
   imports: [
     BrowserModule,

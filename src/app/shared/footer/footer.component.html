@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-3 offset-lg-1 flex-column ">
-          <div class="col"><h4>Company</h4></div>
+          <div class="col"><h4>{{ 'footer.title' | translate}}</h4></div>
           <div class="col nav">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -27,7 +27,7 @@
         </div>
         <div class="col-5">
           <div class="col-lg-10 social-section">
-            <div class="col"><h4>Stay in touch</h4></div>
+            <div class="col"><h4>{{ 'footer.socialTitle' | translate}}</h4></div>
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="https://facebook.com" target="_blank">
@@ -91,14 +91,10 @@
 
     <div class="credits">
       <div class="row languageSwitch  justify-content-center">
-        <div style="padding-top:15px;padding-right:5px;">
-          <label><span style="color:white">{{ 'header.select' | translate }}</span>
-            <select #langSelect (change)="translate.use(langSelect.value)">
-              <option *ngFor="let lang of translate.getLangs()" [value]="lang"
-                      [selected]="lang === translate.currentLang">{{ lang }}
-              </option>
-            </select>
-          </label>
+        <p>{{ 'footer.changeLanguage' | translate}}</p>
+        <div *ngFor="let language of langs">
+          <button class="btn btn-outline-primary" (click)="changeLanguage(language)">{{language | languageTranslate}}
+          </button>
         </div>
       </div>
       <p>© 2018 Damian Nurzyński | All rights reserved</p>
