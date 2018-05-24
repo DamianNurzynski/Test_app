@@ -7,17 +7,17 @@
       <div class="card">
         <!--<img class="card-img-top" src="../../assets/img/placeholder/photo.svg" alt="Card image cap">-->
         <div class="card-body">
-          <h5 class="card-title">Card title that wraps to a new line</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+          <h5 class="card-title">{{'projects.0.title' | translate}}</h5>
+          <p class="card-text">{{'projects.0.text' | translate}}</p>
         </div>
       </div>
       <div class="card p-3">
         <blockquote class="blockquote mb-0 card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <p>{{'projects.1.text' | translate}}</p>
           <footer class="blockquote-footer">
             <small class="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              {{'projects.1.text-muted' | translate}} <cite title="Source Title">{{'projects.1.source-title' |
+              translate}}</cite>
             </small>
           </footer>
         </blockquote>
@@ -29,8 +29,8 @@
       <div class="card">
         <img class="card-img-top" src="../../assets/img/placeholder/photo%20(1).svg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">{{'projects.3.title' | translate}}</h5>
+          <p class="card-text">{{'projects.3.text' | translate}}</p>
           <p class="card-text">
             <small class="text-muted">Last updated 3 mins ago</small>
           </p>
@@ -38,10 +38,11 @@
       </div>
       <div class="card bg-primary text-white text-center p-3">
         <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <p>{{'projects.4.title' | translate}}</p>
           <footer class="blockquote-footer">
             <small>
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              {{ 'projects.4.text-muted' | translate}}
+              <cite title="Source Title">{{ 'projects.4.source-title' | translate}}</cite>
             </small>
           </footer>
         </blockquote>
