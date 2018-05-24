@@ -1,4 +1,32 @@
 {
-  "Title": "Translation example",
-  "Intro": "Hello I am {{name}}, I am {{age}} years old."
+  "nav": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "customers": "Customers",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "hero": {
+      "title": "Lorem ipsum dolor sit amet, consectetur",
+      "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae dignissimos, dolorum ducimus eos fuga illum itaque laudantium maiores natus nemo nostrum?",
+      "seeMoreBtn": "See more"
+    },
+    "main": {
+      "title": "Ab blanditiis eligendi facere",
+      "items": {
+        "first": "first",
+        "second": "second",
+        "third": "third",
+        "fourth": "fourth"
+      }
+    },
+    "technologies": {
+      "title": "Ab blanditiis eligendi facere"
+    },
+    "footer": {
+      "title": "Rerum similique voluptate?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?"
+    }
+  }
 }

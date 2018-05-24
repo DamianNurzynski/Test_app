@@ -7,16 +7,19 @@
           <div class="col nav">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#" routerLink="about">About</a>
+                <a class="nav-link" routerLink="about">{{'nav.product' | translate}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Clients</a>
+                <a class="nav-link" routerLink="pricing">{{'nav.pricing' | translate}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" routerLink="projects">Projects</a>
+                <a class="nav-link" routerLink="customers">{{'nav.customers' | translate}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" routerLink="contact">Contact</a>
+                <a class="nav-link" routerLink="projects">{{'nav.projects' | translate}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="contact">{{'nav.contact' | translate}}</a>
               </li>
             </ul>
           </div>
@@ -88,8 +91,15 @@
 
     <div class="credits">
       <div class="row languageSwitch  justify-content-center">
-        <button (click)="switchLanguage('pl')" class="btn btn-outline-info">Polski</button>
-        <button (click)="switchLanguage('en')" class="btn btn-outline-info">English</button>
+        <div style="padding-top:15px;padding-right:5px;">
+          <label><span style="color:white">{{ 'header.select' | translate }}</span>
+            <select #langSelect (change)="translate.use(langSelect.value)">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang"
+                      [selected]="lang === translate.currentLang">{{ lang }}
+              </option>
+            </select>
+          </label>
+        </div>
       </div>
       <p>© 2018 Damian Nurzyński | All rights reserved</p>
     </div>
