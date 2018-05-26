@@ -16,6 +16,7 @@ import {appInitializerFactory, HttpLoaderFactory} from './core/factories';
 import {FooterComponent, HeaderComponent, LoaderComponent} from './shared';
 import {LanguageTranslatePipe} from './core/pipes/language-translate.pipe';
 import {AgmCoreModule} from "@agm/core";
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import {AgmCoreModule} from "@agm/core";
         FooterComponent,
         HeaderComponent,
         LoaderComponent,
-        LanguageTranslatePipe
+        LanguageTranslatePipe,
+        PricingComponent
     ],
     imports: [
         BrowserModule,

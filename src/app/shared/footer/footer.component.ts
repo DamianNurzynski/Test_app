@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   langs = this.translate.langs;
 
   constructor(private translate: TranslateService) {
-    console.log(this.langs);
+    // console.log(this.langs);
   }
 
   ngOnInit() {

@@ -1,0 +1,100 @@
+
+.pricing-section {
+	padding-bottom: 50px;
+	background: linear-gradient(to top, #fff, #f8faff 80%);
+}
+
+.card {
+	border-radius: 4px;
+}
+
+.section-title{
+	padding-top: 50px;
+	padding-bottom: 5px;
+	font-weight: 600;
+	text-align: center;
+	color:rgba(0,0,0,.8);
+}
+
+.section-subtitle{
+	margin-bottom: 70px;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	color: rgba(0,0,0,.5);
+}
+
+
+.col-3:first-of-type  .plan-main{
+	background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+
+.col-3:nth-of-type(2) .plan-main{
+
+	background-image: linear-gradient(to bottom, #6a11cb 0%, #2575fc 100%);
+}
+
+
+.col-3:nth-of-type(3) .plan-main{
+	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+
+.plan-main {
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+
+	.plan-title {
+		font-size: 18px;
+		margin-top: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.plan-description {
+		font-style: italic;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.plan-price span:first-of-type {
+		font-weight: 600;
+		font-size: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+
+	.plan-price span:nth-of-type(2) {
+		//font-weight: 600;
+		font-size: 46px;
+		text-align: center;
+	}
+
+}
+
+.plan-benefits {
+	//padding: 15px;
+	list-style: none;
+	margin: 30px 0 0 0;
+	padding: 0;
+
+	li {
+		padding: 4px 15px;
+		text-align: center;
+		font-size: 14px;
+		background: rgba(239, 244, 255, .7);
+	}
+
+	li:nth-of-type(2n) {
+		background: #fff;
+	}
+}
+
+.btn {
+	margin: 20px;
+}
