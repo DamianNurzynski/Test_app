@@ -1,41 +1,366 @@
-<app-loader></app-loader>
+<!--<app-loader></app-loader>-->
+
 
 <section class="contact-section">
-	<!--<div class="container">-->
-		<div class="content">
-			<h1>Registration form</h1>
-			<form action="/">
+	<agm-map [latitude]="lat"
+			 [longitude]="lng"
+			 [scrollwheel]="false"
+			 [zoom]="zoom"
+			 [draggable]="false"
+			 [styles]='[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8ec3b9"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1a3646"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#64779e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#4b6878"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#334e87"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#6f9ba5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3C7680"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#304a7d"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#2c6675"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#255763"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#b0d5ce"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#023e58"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#98a5be"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1d2c4d"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#283d6a"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3a4762"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#0e1626"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#4e6d70"
+      }
+    ]
+  }
+]'>
+		<agm-marker  [latitude]="lat"
+					 [longitude]="lng"
+		[visible]="true">
+
+			<agm-info-window [isOpen]="visible" >
+				<strong>InfoWindow content</strong>
 				<div>
-					<input type="text" name="name" id="name" placeholder="Name" maxlength="50">
-					<span><i class="material-icons">person</i></span>
-					<div class="form-tooltip"></div>
+					<h1>dwfaesrdgbefvs</h1>
+					<h1>dwfaesrdgbefvs</h1>
+					<h1>dwfaesrdgbefvs</h1>
+					<h1>dwfaesrdgbefvs</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorem dolorum laboriosam odit quam. Animi consequatur, culpa dolorem doloribus eius odio temporibus voluptatem. Deserunt id laudantium quam rerum. Obcaecati, quam.</p>
 				</div>
-				<div>
-					<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="50">
-					<span><i class="material-icons">person_outline</i></span>
-					<div class="form-tooltip"></div>
-				</div>
-				<div>
-					<input type="text" name="email" id="email" placeholder="Email" maxlength="50">
-					<span><i class="material-icons">mail_outline</i></span>
-					<div class="form-tooltip"></div>
-				</div>
-				<div>
-					<input type="password" name="password" id="password" placeholder="Password" maxlength="50">
-					<span><i class="material-icons">security</i></span>
-					<div class="form-tooltip"></div>
-				</div>
-				<div>
-					<input type="tel" name="phone" id="phone" placeholder="Phone" maxlength="9">
-					<span><i class="material-icons">phone</i></span>
-					<div class="form-tooltip"></div>
-				</div>
-				<div class="buttons">
-					<button type="submit">Send</button>
-					<button type="reset">Reset</button>
-				</div>
-				<a href="#">Forgot your password?</a>
-			</form>
-		</div>
-	<!--</div>-->
+			</agm-info-window>
+
+		</agm-marker>
+	</agm-map>
+
+	<div class="container">
+		<!--<div class="content">-->
+			<!--<h1>Registration form</h1>-->
+			<!--<form action="/">-->
+				<!--<div>-->
+					<!--<input type="text" name="name" id="name" placeholder="Name" maxlength="50">-->
+					<!--<span><i class="material-icons">person</i></span>-->
+					<!--<div class="form-tooltip"></div>-->
+				<!--</div>-->
+				<!--<div>-->
+					<!--<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="50">-->
+					<!--<span><i class="material-icons">person_outline</i></span>-->
+					<!--<div class="form-tooltip"></div>-->
+				<!--</div>-->
+				<!--<div>-->
+					<!--<input type="text" name="email" id="email" placeholder="Email" maxlength="50">-->
+					<!--<span><i class="material-icons">mail_outline</i></span>-->
+					<!--<div class="form-tooltip"></div>-->
+				<!--</div>-->
+				<!--<div>-->
+					<!--<input type="password" name="password" id="password" placeholder="Password" maxlength="50">-->
+					<!--<span><i class="material-icons">security</i></span>-->
+					<!--<div class="form-tooltip"></div>-->
+				<!--</div>-->
+				<!--<div>-->
+					<!--<input type="tel" name="phone" id="phone" placeholder="Phone" maxlength="9">-->
+					<!--<span><i class="material-icons">phone</i></span>-->
+					<!--<div class="form-tooltip"></div>-->
+				<!--</div>-->
+				<!--<div class="buttons">-->
+					<!--<button type="submit">Send</button>-->
+					<!--<button type="reset">Reset</button>-->
+				<!--</div>-->
+				<!--<a href="#">Forgot your password?</a>-->
+			<!--</form>-->
+		<!--</div>-->
+	</div>
 </section>

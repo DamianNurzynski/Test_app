@@ -13,43 +13,45 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {GlobalService, LoaderService} from './core/services';
 import {appInitializerFactory, HttpLoaderFactory} from './core/factories';
-import {FooterComponent} from './shared';
-import {HeaderComponent} from './shared';
-import {LoaderComponent} from './shared';
-import { LanguageTranslatePipe } from './core/pipes/language-translate.pipe';
+import {FooterComponent, HeaderComponent, LoaderComponent} from './shared';
+import {LanguageTranslatePipe} from './core/pipes/language-translate.pipe';
+import {AgmCoreModule} from "@agm/core";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    ContactComponent,
-    ProjectsComponent,
-    FooterComponent,
-    HeaderComponent,
-    LoaderComponent,
-    LanguageTranslatePipe
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    NgbModule.forRoot(),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    AppRoutingModule
-  ],
-  providers: [GlobalService, LoaderService, {
-    provide: APP_INITIALIZER,
-    useFactory: appInitializerFactory,
-    deps: [TranslateService, Injector],
-    multi: true
-  }],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AboutComponent,
+        ContactComponent,
+        ProjectsComponent,
+        FooterComponent,
+        HeaderComponent,
+        LoaderComponent,
+        LanguageTranslatePipe
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        NgbModule.forRoot(),
+        AppRoutingModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAbq1VR5D88MUbkFkjIlw6kbxzPY4YnOVM'
+        })
+    ],
+    providers: [GlobalService, LoaderService, {
+        provide: APP_INITIALIZER,
+        useFactory: appInitializerFactory,
+        deps: [TranslateService, Injector],
+        multi: true
+    }],
+    bootstrap: [AppComponent]
 })
 
 export class AppModule {
