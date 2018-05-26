@@ -39,22 +39,29 @@
 	},
 	"projects": [
 		{
-			"title": "Card title that wraps to a new line",
-			"text" : "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+			"title": "Basic WWW",
+			"text" : "Simple webpage created using HTML, CSS. Not used any frameworks"
 		},
 		{
-			"text"        : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
-			"text-muted"  : "Someone famous in",
+			"text"        : "One page",
+			"text-muted"  : "Website created to show HTML and CSS knowledge with Responsive Web Design rules",
 			"source-title": "Source Title"
 		},
-		{},
 		{
-			"title": "Random title",
-			"text" : "This card has supporting text below as a natural lead-in to additional content."
+			"title": "Tic Tac Toe"
 		},
 		{
-			"title"       : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.",
-			"text-muted"  : "Someone famous in",
+			"title": "Registration Form",
+			"text" : "Reistration form with vanilla javascript data validation."
+		},
+		{
+			"title"       : "Facebook API",
+			"text-muted"  : "See your facebook data in this app. Possibility to login into Facebook directly from app",
+			"source-title": "Source title"
+		},
+		{
+			"title"       : "MVC application",
+			"text-muted"  : "Application build using only vanilla javascript in MVC metodology",
 			"source-title": "Source title"
 		}
 	]

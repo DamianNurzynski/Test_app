@@ -1,12 +1,12 @@
 {
-	"nav"   : {
+	"nav"     : {
 		"product"  : "Product",
 		"pricing"  : "Pricing",
 		"customers": "Customers",
 		"projects" : "Projects",
 		"contact"  : "Contact"
 	},
-	"about" : {
+	"about"   : {
 		"hero"        : {
 			"title"     : "Lorem ipsum dolor sit amet, consectetur",
 			"intro"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae dignissimos, dolorum ducimus eos fuga illum itaque laudantium maiores natus nemo nostrum?",
@@ -25,10 +25,35 @@
 			"title": "Technologie"
 		}
 	},
-	"footer": {
+	"footer"  : {
 		"title"         : "Rerum similique voluptate?",
 		"socialTitle"   : "Zobacz także",
 		"content"       : "ciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?",
 		"changeLanguage": "Zmień język"
-	}
+	},
+	"projects": [
+		{
+			"title": "Basic WWW",
+			"text" : "Simple webpage created using HTML, CSS. Not used any frameworks"
+		},
+		{
+			"title"        : "One page",
+			"text"  : "Website created to show HTML and CSS knowledge with Responsive Web Design rules"
+		},
+		{
+			"title": "Tic Tac Toe"
+		},
+		{
+			"title": "Registration Form",
+			"text" : "Reistration form with vanilla javascript data validation."
+		},
+		{
+			"title"       : "Facebook API",
+			"text"  : "See your facebook data in this app. Possibility to login into Facebook directly from app"
+		},
+		{
+			"title"       : "MVC application",
+			"text"  : "Application build using only vanilla javascript in MVC metodology"
+		}
+	]
 }
