@@ -2,12 +2,7 @@
 
 
 <section class="contact-section">
-	<agm-map [latitude]="lat"
-			 [longitude]="lng"
-			 [scrollwheel]="false"
-			 [zoom]="zoom"
-			 [draggable]="false"
-			 [styles]='[
+	<agm-map [latitude]="lat" [longitude]="lng" [scrollwheel]="false" [zoom]="zoom" [draggable]="false" [styles]='[
   {
     "elementType": "geometry",
     "stylers": [
@@ -308,18 +303,39 @@
     ]
   }
 ]'>
-		<agm-marker  [latitude]="lat"
-					 [longitude]="lng"
-		[visible]="true">
+		<agm-marker [latitude]="lat" [longitude]="lng" [visible]="true">
 
-			<agm-info-window [isOpen]="visible" >
-				<strong>InfoWindow content</strong>
-				<div>
-					<h1>dwfaesrdgbefvs</h1>
-					<h1>dwfaesrdgbefvs</h1>
-					<h1>dwfaesrdgbefvs</h1>
-					<h1>dwfaesrdgbefvs</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorem dolorum laboriosam odit quam. Animi consequatur, culpa dolorem doloribus eius odio temporibus voluptatem. Deserunt id laudantium quam rerum. Obcaecati, quam.</p>
+			<agm-info-window [isOpen]="visible">
+				<div class="col">
+					<h1>The best company</h1>
+				</div>
+				<div class="col company-info">
+					<div class="row">
+						<div class="col-4">
+							<span>Address:</span>
+						</div>
+						<div class="col flex-column">
+							<span class="d-block">Nowoursynowska 166</span>
+							<span class="d-block">02-787 Warszawa</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<span>Phone:</span>
+						</div>
+						<div class="col">
+							<span>22 593 30 42</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<span>Email:</span>
+						</div>
+						<div class="col">
+							<span>contact@tbc.com</span>
+						</div>
+					</div>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorem dolorum laboriosam odit quam. Animi consequatur, culpa dolorem doloribus eius odio temporibus voluptatem. Deserunt id laudantium quam rerum. Obcaecati, quam.</p>-->
 				</div>
 			</agm-info-window>
 
@@ -328,39 +344,39 @@
 
 	<div class="container">
 		<!--<div class="content">-->
-			<!--<h1>Registration form</h1>-->
-			<!--<form action="/">-->
-				<!--<div>-->
-					<!--<input type="text" name="name" id="name" placeholder="Name" maxlength="50">-->
-					<!--<span><i class="material-icons">person</i></span>-->
-					<!--<div class="form-tooltip"></div>-->
-				<!--</div>-->
-				<!--<div>-->
-					<!--<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="50">-->
-					<!--<span><i class="material-icons">person_outline</i></span>-->
-					<!--<div class="form-tooltip"></div>-->
-				<!--</div>-->
-				<!--<div>-->
-					<!--<input type="text" name="email" id="email" placeholder="Email" maxlength="50">-->
-					<!--<span><i class="material-icons">mail_outline</i></span>-->
-					<!--<div class="form-tooltip"></div>-->
-				<!--</div>-->
-				<!--<div>-->
-					<!--<input type="password" name="password" id="password" placeholder="Password" maxlength="50">-->
-					<!--<span><i class="material-icons">security</i></span>-->
-					<!--<div class="form-tooltip"></div>-->
-				<!--</div>-->
-				<!--<div>-->
-					<!--<input type="tel" name="phone" id="phone" placeholder="Phone" maxlength="9">-->
-					<!--<span><i class="material-icons">phone</i></span>-->
-					<!--<div class="form-tooltip"></div>-->
-				<!--</div>-->
-				<!--<div class="buttons">-->
-					<!--<button type="submit">Send</button>-->
-					<!--<button type="reset">Reset</button>-->
-				<!--</div>-->
-				<!--<a href="#">Forgot your password?</a>-->
-			<!--</form>-->
+		<!--<h1>Registration form</h1>-->
+		<!--<form action="/">-->
+		<!--<div>-->
+		<!--<input type="text" name="name" id="name" placeholder="Name" maxlength="50">-->
+		<!--<span><i class="material-icons">person</i></span>-->
+		<!--<div class="form-tooltip"></div>-->
+		<!--</div>-->
+		<!--<div>-->
+		<!--<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="50">-->
+		<!--<span><i class="material-icons">person_outline</i></span>-->
+		<!--<div class="form-tooltip"></div>-->
+		<!--</div>-->
+		<!--<div>-->
+		<!--<input type="text" name="email" id="email" placeholder="Email" maxlength="50">-->
+		<!--<span><i class="material-icons">mail_outline</i></span>-->
+		<!--<div class="form-tooltip"></div>-->
+		<!--</div>-->
+		<!--<div>-->
+		<!--<input type="password" name="password" id="password" placeholder="Password" maxlength="50">-->
+		<!--<span><i class="material-icons">security</i></span>-->
+		<!--<div class="form-tooltip"></div>-->
+		<!--</div>-->
+		<!--<div>-->
+		<!--<input type="tel" name="phone" id="phone" placeholder="Phone" maxlength="9">-->
+		<!--<span><i class="material-icons">phone</i></span>-->
+		<!--<div class="form-tooltip"></div>-->
+		<!--</div>-->
+		<!--<div class="buttons">-->
+		<!--<button type="submit">Send</button>-->
+		<!--<button type="reset">Reset</button>-->
+		<!--</div>-->
+		<!--<a href="#">Forgot your password?</a>-->
+		<!--</form>-->
 		<!--</div>-->
 	</div>
 </section>

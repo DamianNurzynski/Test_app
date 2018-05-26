@@ -15,9 +15,7 @@ export class ContactComponent implements OnInit {
     lng: Number = 21.048775;
     zoom = 12;
     label = 'etykieta';
-    visible = false;
-
-    // customStyles = customStyles;
+    visible = true;
 
 
     constructor(private apiService: ApiService) {
@@ -28,9 +26,9 @@ export class ContactComponent implements OnInit {
         //     console.log(data);
         // });
 
-        setTimeout(() => {
-            this.visible = true;
-        }, 1000);
+        // setTimeout(() => {
+        //     this.visible = true;
+        // }, 1000);
     }
 
 }
