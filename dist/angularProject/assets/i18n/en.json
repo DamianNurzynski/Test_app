@@ -1,0 +1,131 @@
+{
+	"nav"     : {
+		"product"  : "Product",
+		"pricing"  : "Pricing",
+		"customers": "Customers",
+		"projects" : "Projects",
+		"contact"  : "Contact"
+	},
+	"about"   : {
+		"hero"        : {
+			"title"     : "Lorem ipsum dolor sit amet, consectetur",
+			"intro"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae dignissimos, dolorum ducimus eos fuga illum itaque laudantium maiores natus nemo nostrum?",
+			"seeMoreBtn": "See more"
+		},
+		"main"        : {
+			"title": "Ab blanditiis eligendi facere",
+			"items": {
+				"first" : "first",
+				"second": "second",
+				"third" : "third",
+				"fourth": "fourth"
+			}
+		},
+		"technologies": {
+			"title": "Technologies"
+		},
+		"footer"      : {
+			"title"  : "Rerum similique voluptate?",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?"
+		}
+	},
+	"footer"  : {
+		"title"                : "Rerum similique",
+		"socialTitle"          : "See us on",
+		"changeLanguage"       : "Change language",
+		"newsletter"           : "newsletter",
+		"newsletterPlaceholder": "Your email address",
+		"subscribe"            : "Subscribe"
+	},
+	"projects": [
+		{
+			"title": "Basic WWW",
+			"text" : "Simple webpage created using HTML, CSS. Not used any frameworks"
+		},
+		{
+			"text"        : "One page",
+			"text-muted"  : "Website created to show HTML and CSS knowledge with Responsive Web Design rules",
+			"source-title": "Source Title"
+		},
+		{
+			"title": "Tic Tac Toe"
+		},
+		{
+			"title": "Registration Form",
+			"text" : "Reistration form with vanilla javascript data validation."
+		},
+		{
+			"title"       : "Facebook API",
+			"text-muted"  : "See your facebook data in this app. Possibility to login into Facebook directly from app",
+			"source-title": "Source title"
+		},
+		{
+			"title"       : "MVC application",
+			"text-muted"  : "Application build using only vanilla javascript in MVC metodology",
+			"source-title": "Source title"
+		}
+	],
+	"contact" : {
+		"address"        : "address",
+		"phone"          : "phone",
+		"email"          : "email",
+		"addressContent1": "Nowoursynowska 166",
+		"addressContent2": "02-787 Warszawa",
+		"phoneContent"   : "22 593 30 42",
+		"emailContent"   : "contact@tbc.com"
+	},
+	"pricing" : {
+		"title"      : "Choose the best pricing for you",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias asperiores assumenda",
+		"essential"  : {
+			"title"      : "Essential",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "35 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		},
+		"business"   : {
+			"title"      : "business",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "79 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		},
+		"enterprise" : {
+			"title"      : "Enterprise",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "199 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		}
+	}
+}
