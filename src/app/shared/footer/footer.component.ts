@@ -18,5 +18,6 @@ export class FooterComponent implements OnInit {
 
   changeLanguage(language) {
     this.translate.use(language);
+    window.sessionStorage['language'] = language;
   }
 }
