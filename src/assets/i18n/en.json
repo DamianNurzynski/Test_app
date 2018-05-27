@@ -25,17 +25,17 @@
 			"title": "Technologies"
 		},
 		"footer"      : {
-			"title"         : "Rerum similique voluptate?",
-			"socialTitle"   : "See us on",
-			"content"       : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?",
-			"changeLanguage": "Change language"
+			"title"  : "Rerum similique voluptate?",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?"
 		}
 	},
 	"footer"  : {
-		"title"         : "Rerum similique voluptate?",
-		"socialTitle"   : "See us on",
-		"content"       : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?",
-		"changeLanguage": "Change language"
+		"title"                : "Rerum similique",
+		"socialTitle"          : "See us on",
+		"changeLanguage"       : "Change language",
+		"newsletter"           : "newsletter",
+		"newsletterPlaceholder": "Your email address",
+		"subscribe"            : "Subscribe"
 	},
 	"projects": [
 		{
@@ -64,5 +64,68 @@
 			"text-muted"  : "Application build using only vanilla javascript in MVC metodology",
 			"source-title": "Source title"
 		}
-	]
+	],
+	"contact" : {
+		"address"        : "address",
+		"phone"          : "phone",
+		"email"          : "email",
+		"addressContent1": "Nowoursynowska 166",
+		"addressContent2": "02-787 Warszawa",
+		"phoneContent"   : "22 593 30 42",
+		"emailContent"   : "contact@tbc.com"
+	},
+	"pricing" : {
+		"title"      : "Choose the best pricing for you",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias asperiores assumenda",
+		"essential"  : {
+			"title"      : "Essential",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "35 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		},
+		"business"   : {
+			"title"      : "business",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "79 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		},
+		"enterprise" : {
+			"title"      : "Enterprise",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"label"      : "Starting at",
+			"price"      : "199 $",
+			"benefits"   : [
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space",
+				"Small support",
+				"Multi-user-access",
+				"Email support",
+				"Free cloud space"
+			],
+			"button"     : "Start plan"
+		}
+	}
 }

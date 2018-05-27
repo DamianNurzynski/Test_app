@@ -1,10 +1,10 @@
 .container .row > div {
-	margin-top: 150px;
+	margin-top: 80px;
 	margin-bottom: 20px;
 }
 
 h2 {
-	margin-top: 140px;
+	margin-top: 200px;
 	font-weight: 400;
 	text-align: center;
 	color: #3e396b;
@@ -38,6 +38,17 @@ h2 {
 
 	.hero-actions {
 		margin-bottom: 100px;
+	}
+	
+	button.btn{
+		padding: 5px 18px;
+		background: #28a745;
+		color: #ffffff;
+	}
+
+	button.btn:hover{
+		background: #268d3f;
+		color: rgba(255,255,255,.9);
 	}
 }
 
