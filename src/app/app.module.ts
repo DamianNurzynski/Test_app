@@ -25,17 +25,16 @@ import { PricingComponent } from './pricing/pricing.component';
         ContactComponent,
         ProjectsComponent,
         FooterComponent,
-        HeaderComponent,
         LoaderComponent,
         LanguageTranslatePipe,
-        PricingComponent
+        PricingComponent,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpClientModule,
         NgbModule.forRoot(),
-        AppRoutingModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
@@ -45,7 +44,8 @@ import { PricingComponent } from './pricing/pricing.component';
         }),
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyAbq1VR5D88MUbkFkjIlw6kbxzPY4YnOVM'
-        })
+        }),
+        AppRoutingModule
     ],
     providers: [GlobalService, LoaderService, {
         provide: APP_INITIALIZER,

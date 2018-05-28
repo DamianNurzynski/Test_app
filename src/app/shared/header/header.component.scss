@@ -1,5 +1,4 @@
 
-
 .navbar-custom a.navbar-brand {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -8,9 +7,15 @@
 }
 
 .navbar-custom li a {
-	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: .6px;
 	font-size: 12px;
+	position: relative;
 }
+
+.activeLink {
+	color: linear-gradient(to left, var(--primary) 100%, #6a11cb 0%);
+	font-weight: 600;
+}
+
 

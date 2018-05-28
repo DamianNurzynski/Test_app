@@ -5,15 +5,15 @@
 
 h2 {
 	margin-top: 200px;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
 	color: #3e396b;
 	font-size: 28px;
 }
 
-.card:hover{
-	background: rgba(0,0,0,.003);
-	border-color: rgba(0,0,0,.2);
+.card:hover {
+	background: rgba(0, 0, 0, .003);
+	border-color: rgba(0, 0, 0, .2);
 }
 
 .hero-section {
@@ -29,8 +29,8 @@ h2 {
 	}
 
 	p {
-		color: #ffffff;
-		font-size: 22px;
+		color: rgba(255, 255, 255, .8);
+		font-size: 18px;
 		line-height: 28px;
 		margin-bottom: 40px;
 		text-align: center;
@@ -39,16 +39,16 @@ h2 {
 	.hero-actions {
 		margin-bottom: 100px;
 	}
-	
-	button.btn{
+
+	button.btn {
 		padding: 5px 18px;
 		background: #28a745;
 		color: #ffffff;
 	}
 
-	button.btn:hover{
+	button.btn:hover {
 		background: #268d3f;
-		color: rgba(255,255,255,.9);
+		color: rgba(255, 255, 255, .9);
 	}
 }
 
@@ -66,7 +66,7 @@ h2 {
 
 	span:nth-child(2) {
 		margin: 25px auto 0 auto;
-		font-weight: 500;
+		color: rgba(0, 0, 0, .7);
 	}
 
 	span > i {
@@ -121,8 +121,9 @@ h2 {
 		z-index: -1;
 	}
 
-	p{
+	p {
 		font-style: italic;
+		color: rgba(0, 0, 0, .7);
 	}
 
 	h2 {

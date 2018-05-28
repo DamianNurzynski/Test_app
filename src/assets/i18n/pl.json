@@ -1,41 +1,41 @@
 {
 	"nav"     : {
-		"product"  : "Product",
-		"pricing"  : "Pricing",
-		"customers": "Customers",
-		"projects" : "Projects",
-		"contact"  : "Contact"
+		"product"  : "Produkt",
+		"pricing"  : "Finansowanie",
+		"customers": "Klienci",
+		"projects" : "Projekty",
+		"contact"  : "Kontakt"
 	},
 	"about"   : {
 		"hero"        : {
-			"title"     : "Lorem ipsum dolor sit amet, consectetur",
-			"intro"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae dignissimos, dolorum ducimus eos fuga illum itaque laudantium maiores natus nemo nostrum?",
-			"seeMoreBtn": "See more"
+			"title"     : "Dostosuj ofertę TBC do swoich potrzeb.",
+			"intro"     : "Naszą misją jest stworzenie wiarygodnej i rentownej globalnej firmy informatycznej dostarczającej wysokiej jakości oprogramowanie i usługi. ",
+			"seeMoreBtn": "Zobacz więcej"
 		},
 		"main"        : {
-			"title": "Ab blanditiis eligendi facere",
+			"title": "Dzięki nam zyskujesz",
 			"items": {
-				"first" : "pierwszy",
-				"second": "drugi",
-				"third" : "trzeci",
-				"fourth": "czwarty"
+				"first" : "najlepszy sprzęt",
+				"second": "dożywotnie wsparcie",
+				"third" : "najlepszych ludzi",
+				"fourth": "coś fajnego"
 			}
 		},
 		"technologies": {
-			"title": "Technologies"
+			"title": "Technologie"
 		},
 		"footer"      : {
-			"title"  : "Rerum similique voluptate?",
-			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ex perspiciatis quae quos reiciendis. Doloremque dolores facilis harum impedit incidunt laboriosam libero nemo non obcaecati pariatur, quaerat quas sed temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam officiis repellendus, sequi sunt vitae. Animi aperiam facilis impedit, laboriosam minus neque nulla numquam, officiis sed soluta tenetur totam voluptates?"
+			"title"  : "Dlaczego nasza firma?",
+			"content": "W praktyce rozszerzenie naszej kompetencji w restrukturyzacji przedsiębiorstwa. Nie chcę państwu niczego sugerować, ale zakres i unowocześniania form działalności organizacyjnej ukazuje nam efekt postaw uczestników wobec zadań stanowionych przez organizację. W ten sposób zawiązanie koalicji koliduje z dotychczasowymi zasadami postaw uczestników wobec zadań stanowionych przez organizację. "
 		}
 	},
 	"footer"  : {
-		"title"                : "Rerum similique",
-		"socialTitle"          : "See us on",
-		"changeLanguage"       : "Change language",
+		"title"                : "Nawigacja",
+		"socialTitle"          : "Zobacz także",
+		"changeLanguage"       : "Zmień język",
 		"newsletter"           : "newsletter",
-		"newsletterPlaceholder": "Your email address",
-		"subscribe"            : "Subscribe"
+		"newsletterPlaceholder": "Podaj adres email",
+		"subscribe"            : "Subskrybuj"
 	},
 	"projects": [
 		{
@@ -66,8 +66,8 @@
 		}
 	],
 	"contact" : {
-		"address"        : "address",
-		"phone"          : "phone",
+		"address"        : "adres",
+		"phone"          : "telefon",
 		"email"          : "email",
 		"addressContent1": "Nowoursynowska 166",
 		"addressContent2": "02-787 Warszawa",
@@ -75,7 +75,7 @@
 		"emailContent"   : "contact@tbc.com"
 	},
 	"pricing" : {
-		"title"      : "Choose the best pricing for you",
+		"title"      : "Wybierz najlepszą ofertę finansowania",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias asperiores assumenda",
 		"essential"  : {
 			"title"      : "Essential",
